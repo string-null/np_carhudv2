@@ -21,11 +21,11 @@ Citizen.CreateThread(function()
             end
             -- Send all the data to the NUI browser.
             SendNUIMessage({
-				isInCoche = vehicle;
-				speed = speed;
-                vidatexto = math.floor(health + 0.5)
-				fueltexto = math.floor(fuel + 0.5),
-			})
+		isInCoche = vehicle;
+		speed = speed;
+		vidatexto = math.floor(math.floor(health + 0.5) / 10),
+		fueltexto = math.floor(fuel + 0.5),
+		})
             sleep = false
 		else
 			SendNUIMessage({
